@@ -1,0 +1,41 @@
+---
+# defaults file for opendmarc
+
+opendmarc_package: opendmarc
+opendmarc_config_file: /etc/opendmarc.conf
+opendmarc_service: opendmarc
+
+opendmarc_authservid: 'HOSTNAME'
+opendmarc_authservidwithjobid: 'false'
+opendmarc_autorestart: 'false'
+opendmarc_autorestartcount: 0
+opendmarc_autorestartrate: 'none'
+opendmarc_background: 'true'
+opendmarc_basedirectory: 'none'
+opendmarc_changerootdirectory: 'none'
+opendmarc_copyfailuresto: 'none'
+opendmarc_dnstimeout: 5
+opendmarc_enablecoredumps: 'false'
+opendmarc_failurereports: 'false'
+opendmarc_failurereportsbcc: 'none'
+opendmarc_failurereportsonnone: 'false'
+opendmarc_failurereportssentby: 'USER@HOSTNAME'
+opendmarc_historyfile: 'none'
+opendmarc_ignoreauthenticatedclient: 'false'
+opendmarc_ignoremailfrom: 'none'
+opendmarc_milterdebug: 0
+opendmarc_pidfile: 'none'
+opendmarc_publicsuffixlist: 'none'
+opendmarc_recordallmessages: 'false'
+opendmarc_rejectfailures: 'false'
+opendmarc_reportcommand: '/usr/sbin/sendmail -t'
+opendmarc_requiredheaders: 'false'
+opendmarc_socket: 'inet:8893@localhost'
+opendmarc_softwareheader: 'true'
+opendmarc_spfignoreresults: 'true'
+opendmarc_spfselfvalidate: 'true'
+opendmarc_syslog: 'true'
+opendmarc_syslogfacility: 'mail'
+opendmarc_trustedauthservids: 'HOSTNAME'
+opendmarc_umask: '007'
+opendmarc_userid: 'opendmarc:mail'

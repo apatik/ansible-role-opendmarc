@@ -1,0 +1,6 @@
+---
+# handlers file for opendmarc
+- name: Restart OpenDMARC
+  service:
+    name: "{{ opendmarc_service }}"
+    state: restarted

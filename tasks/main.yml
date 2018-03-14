@@ -1,0 +1,22 @@
+---
+# tasks file for opendmarc
+
+- name: Install OpenDMARC package
+  package:
+    name: "{{ opendmarc_package }}"
+    state: present
+
+- name: OpenDMARC Config File
+  template:
+    src: opendmarc.conf.j2
+    dest: "{{ opendmarc_config_file }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: Restart OpenDMARC
+
+- name: OpenDMARC Service
+  service:
+    name: "{{ opendmarc_service }}"
+    state: started
+    enabled: yes
